@@ -1,0 +1,34 @@
+const Hero = () => {
+  return (
+    <section id="home" className="pt-36">
+      <div className="container">
+        <div className="flex flex-wrap">
+          <div className="w-full self-center px-4">
+            <h1 className="text-base font-semibold text-[#61dafb]">
+              Hi everyone 👋, i'm
+              <span className="block font-bold text-slate-900 text-3xl mt-1">
+                Andi Fiqih Zulfikar Ashari
+              </span>
+            </h1>
+            <h2 className="text-slate-500 font-semibold">
+              Front-end <span className="text-yellow-400">Developer</span>
+            </h2>
+            <p className="mt-3 text-slate-500 leading-relaxed mb-10">
+              A Frontend Developer who is highly interested and developing my
+              skill on
+              <span className="font-bold text-slate-600">ReactJS</span>.
+            </p>
+            <a
+              href=""
+              className="font-bold bg-[#61dafb] py-2 px-4 text-white rounded-full text-sm hover:opacity-70 transition duration-200 hover:shadow-lg"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
