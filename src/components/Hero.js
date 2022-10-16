@@ -1,9 +1,11 @@
+import profile from "../assets/profile.jpeg";
+
 const Hero = () => {
   return (
     <section id="home" className="pt-36">
       <div className="container">
         <div className="flex flex-wrap">
-          <div className="w-full self-center px-4">
+          <div className="w-full self-center px-4 lg:w-1/2">
             <h1 className="text-base font-semibold text-[#61dafb]">
               Hi everyone 👋, i'm
               <span className="block font-bold text-slate-900 text-3xl mt-1">
@@ -24,6 +26,11 @@ const Hero = () => {
             >
               Contact Me
             </a>
+          </div>
+          <div className="w-full self-end px-4 lg:w-1/2">
+            <div className="mt-10">
+              <img src={profile} alt="Me" className="rounded-full" />
+            </div>
           </div>
         </div>
       </div>
