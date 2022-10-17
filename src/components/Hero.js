@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpeg";
 const Hero = () => {
   return (
     <section id="home" className="pt-36">
-      <div className="container mx-auto p-4">
+      <div className="container">
         <div className="flex flex-wrap">
           {/* LEFT */}
           <div className="w-full self-center px-4 lg:w-1/2">
