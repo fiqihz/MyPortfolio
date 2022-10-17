@@ -3,8 +3,9 @@ import profile from "../assets/profile.jpeg";
 const Hero = () => {
   return (
     <section id="home" className="pt-36">
-      <div className="container">
+      <div className="container mx-auto p-4">
         <div className="flex flex-wrap">
+          {/* LEFT */}
           <div className="w-full self-center px-4 lg:w-1/2">
             <h1 className="text-base font-semibold text-[#61dafb] md:text-xl">
               Hi everyone 👋, i'm
@@ -27,8 +28,10 @@ const Hero = () => {
               Contact Me
             </a>
           </div>
+
+          {/* RIGHT */}
           <div className="w-full self-end px-4 lg:w-1/2">
-            <div className="mt-10">
+            <div className="mt-14 lg:mt-0">
               <img
                 src={profile}
                 alt="Me"
