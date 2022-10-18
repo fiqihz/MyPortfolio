@@ -3,7 +3,7 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div>
+    <div className="font-poppin">
       <Hero />
       <About />
     </div>
