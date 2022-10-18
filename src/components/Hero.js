@@ -16,9 +16,9 @@ const Hero = () => {
             <h2 className="text-slate-500 font-semibold lg:text-xl">
               Front-end <span className="text-yellow-400">Developer</span>
             </h2>
-            <p className="mt-3 text-slate-500 leading-relaxed mb-10 lg:text-lg">
-              A Frontend Developer who is highly interested and developing my
-              skill on
+            <p className="mt-3 text-slate-500 leading-relaxed mb-10 lg:text-lg text-justify">
+              A Frontend Developer who is highly interested and keep developing
+              my skill on
               <span className="font-bold text-slate-600"> ReactJS</span>.
             </p>
             <a
