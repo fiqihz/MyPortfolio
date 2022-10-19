@@ -9,34 +9,38 @@ const Navbar = () => {
 
   const toggleClasses =
     toggle === true
-      ? "block absolute right-3 hamburger-change "
-      : "block absolute right-3 ";
+      ? "block absolute right-3 hamburger-change lg:hidden"
+      : "block absolute right-3 lg:hidden";
+
+  const navClasses = toggle === true ? "block" : "hidden";
 
   return (
-    <header className="fixed top-0 left-0 bg-transparent w-full z-[9999] bg-white bg-opacity-80 navbar-blur">
+    <header className="fixed top-0 left-0 bg-transparent w-full flex items-center z-[9999] bg-white bg-opacity-80 navbar-blur">
       <div className="container">
         <div className="flex items-center justify-between relative">
           <div className="px-4">
             <a
               href="#home"
-              className="py-6 block text-[#61dafb] font-bold text-lg"
+              className="py-6 block text-[#61dafb] font-bold text-lg lg:text-xl"
             >
               fiqihz<span className="text-yellow-400">Dev</span>
             </a>
           </div>
-          <button onClick={handleChangeToggle} className={toggleClasses}>
-            <span className="w-[30px] h-[2px] block my-2 bg-black transition duration-200 ease-in-out origin-top-left"></span>
-            <span className="w-[30px] h-[2px] block my-2 bg-black transition duration-200 ease-in-out"></span>
-            <span className="w-[30px] h-[2px] block my-2 bg-black transition duration-200 ease-in-out origin-bottom-left"></span>
-          </button>
+          <div className="flex items-center px-4">
+            <button onClick={handleChangeToggle} className={toggleClasses}>
+              <span className="hamburger-button origin-top-left"></span>
+              <span className="hamburger-button"></span>
+              <span className="hamburger-button origin-bottom-left"></span>
+            </button>
 
-          {toggle && (
-            <nav className="absolute py-5 px-5 right-2 top-full max-w-[250px] w-full bg-white border-2 shadow-lg rounded-lg">
-              <ul className="block">
+            <nav
+              className={`absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none ${navClasses}`}
+            >
+              <ul className="block lg:flex">
                 <li className="group">
                   <a
                     href="#home"
-                    className="flex group-hover:text-[#61dafb] py-2"
+                    className="flex group-hover:text-[#61dafb] py-2 px-8"
                   >
                     Home
                   </a>
@@ -44,7 +48,7 @@ const Navbar = () => {
                 <li className="group">
                   <a
                     href="#about"
-                    className="flex group-hover:text-[#61dafb] py-2"
+                    className="flex group-hover:text-[#61dafb] py-2 px-8"
                   >
                     About
                   </a>
@@ -52,7 +56,7 @@ const Navbar = () => {
                 <li className="group">
                   <a
                     href="#portfolio"
-                    className="flex group-hover:text-[#61dafb] py-2"
+                    className="flex group-hover:text-[#61dafb] py-2 px-8"
                   >
                     Portfolio
                   </a>
@@ -60,14 +64,14 @@ const Navbar = () => {
                 <li className="group">
                   <a
                     href="#contact"
-                    className="flex group-hover:text-[#61dafb] py-2"
+                    className="flex group-hover:text-[#61dafb] py-2 px-8"
                   >
                     Contact
                   </a>
                 </li>
               </ul>
             </nav>
-          )}
+          </div>
         </div>
       </div>
     </header>
