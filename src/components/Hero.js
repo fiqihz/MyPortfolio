@@ -22,7 +22,7 @@ const Hero = () => {
               <span className="font-bold text-slate-600"> ReactJS</span>.
             </p>
             <a
-              href=""
+              href="#about"
               className="font-bold bg-[#61dafb] py-2 px-4 text-white rounded-full text-sm hover:opacity-70 transition duration-200 hover:shadow-lg md:py-3 lg:px-6"
             >
               Contact Me
