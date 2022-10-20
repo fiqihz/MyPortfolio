@@ -61,14 +61,6 @@ const Navbar = () => {
                     Portfolio
                   </a>
                 </li>
-                <li className="group">
-                  <a
-                    href="#contact"
-                    className="flex group-hover:text-[#61dafb] py-2 px-8"
-                  >
-                    Contact
-                  </a>
-                </li>
               </ul>
             </nav>
           </div>
