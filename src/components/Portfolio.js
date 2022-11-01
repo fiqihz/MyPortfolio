@@ -1,4 +1,6 @@
-import sikasep from "../assets/sikasep.png";
+import SIKUMBANG from "../assets/SIKUMBANG.png";
+import SIKASEP from "../assets/SIKASEP.jpg";
+import MUNJULMEALS from "../assets/MUNJULMEALS.png";
 import wr from "../assets/wr.png";
 import loyola from "../assets/loyola.png";
 
@@ -21,10 +23,25 @@ const Portfolio = () => {
         </div>
 
         <div className="w-full px-4 flex flex-wrap justify-center xl:max-w-5xl xl:mx-auto">
-          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out cursor-pointer group">
+          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out group">
             <div className="rounded-md shadow-md overflow-hidden ">
               <img
-                src={sikasep}
+                src={MUNJULMEALS}
+                alt="MunjulMeals"
+                className="w-full group-hover:scale-105 transition duration-300 ease-in-out"
+              />
+            </div>
+            <h3 className="font-semibold mt-5 text-lg">MunjulMeals</h3>
+            <p className="text-slate-500 mt-2 text-justify">
+              Web-Based simple food order application which i build using
+              ReactJS and TailwindCSS.
+            </p>
+          </div>
+
+          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out group">
+            <div className="rounded-md shadow-md overflow-hidden ">
+              <img
+                src={SIKASEP}
                 alt="Sikasep"
                 className="w-full group-hover:scale-105 transition duration-300 ease-in-out"
               />
@@ -38,10 +55,10 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out cursor-pointer group">
+          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out group">
             <div className="rounded-md shadow-md overflow-hidden ">
               <img
-                src={sikasep}
+                src={SIKUMBANG}
                 alt="SIKUMBANG"
                 className="w-full group-hover:scale-105 transition duration-300 ease-in-out"
               />
@@ -55,7 +72,7 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out cursor-pointer group">
+          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out group">
             <div className="rounded-md shadow-md overflow-hidden ">
               <img
                 src={wr}
@@ -71,7 +88,7 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out cursor-pointer group">
+          <div className="mb-8 p-4 md:w-1/2 hover:scale-95 transition duration-300 ease-in-out group">
             <div className="rounded-md shadow-md overflow-hidden ">
               <img
                 src={loyola}
